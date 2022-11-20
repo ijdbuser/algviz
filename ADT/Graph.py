@@ -32,6 +32,9 @@ class Graph:
         self.E = E
         self.V = V
 
+    def __len__(self):
+        return len(self.V)
+
     def get_edges_from_v(self, v: Node):
         res = []
         for edge in self.E:
